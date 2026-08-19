@@ -1,5 +1,6 @@
 import "../style/login.scss"
 import FormGroup from "../components/FormGroup"
+import { Link } from "react-router"
 
 const Login = () => {
   return (
@@ -11,6 +12,7 @@ const Login = () => {
                 <FormGroup label="Password" placeholder="Enter your password"></FormGroup>
                 <button type="submit" className="button">Login</button>
             </form>
+            <p>Don't have an account? <Link to="/register">register Here</Link></p>
         </div>
     </main>
   )
