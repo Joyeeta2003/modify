@@ -13,9 +13,9 @@ export const useAuth = () =>{
         setLoading(false)
     }
 
-    async function handleLogin({username,email,password}) {
+    async function handleLogin({email,password}) {
         setLoading(true);
-        const data = await login({username,email,password})
+        const data = await login({email,password})
         setUser(data.user)
         setLoading(false)
     }
